@@ -1,0 +1,916 @@
+/*Estilo general de la pagina*/
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+h1, h2, h3{
+    font-family: 'Montserrat', sans-serif;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+/*Estilo para el menu de navegación*/
+header.navbar {
+    background-color: #d1b1e0;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .logo {
+    padding: 10px 0; 
+}
+
+header .logo img {
+    height: 150px;
+     vertical-align: middle; 
+    
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .icons {
+    display: flex;
+    align-items: center;
+}
+
+header .icons a {
+    color: #000;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+header .icons i {
+    margin-right: 5px;
+}
+
+/*Estilo imagen principal*/
+.imagenflores {
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.imagenflores img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*Estilo seccion ofertas del dia*/
+
+.offers {
+    margin: 40px 0;
+    text-align: left;
+}
+
+.offers .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.offers h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.offers .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 100%;
+}
+
+.offers p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.offers .books {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    max-width: 100%;
+}
+
+.offers .books img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.main-content .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-content .section-news, .main-content .section-events {
+    width: 45%;
+    text-align: center;
+}
+
+.main-content h2 {
+    color: #d52896;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.main-content img {
+    width: 100%;
+    height: auto;
+}
+/*Estilo reseñas*/
+.reviews {
+    text-align: center; 
+}
+
+.review {
+    display: inline-block; 
+    margin: 20px; 
+}
+
+.review-box {
+    background-color: #800080;
+    padding: 30px;
+    border-radius: 15px; 
+    width: 200px; 
+    text-align: center; 
+}
+
+.review-box p {
+    margin: 10px 0;
+}
+
+.review-box strong {
+    color: #ffff;
+}
+
+.review-box .rating {
+    font-size: 28px; 
+    color: #ffd700; 
+}
+
+
+/* pagina sobre nosotros*/
+
+/*Menu secundario*/
+
+.category-tabs.tabs {
+    background-color: #EFEFEF;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.category-tabs.tabs .container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.category-tab.tab {
+    background-color: #C34181;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.category-tab.tab:hover {
+    background-color: #A12E61;
+}
+
+/*Estilo para texto sobre historia*/
+
+.history {
+    background-color: #ffccd5;
+    padding: 20px;
+}
+
+.history-content {
+    max-width: 1200px; 
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start; 
+    gap: 20px; 
+    flex-wrap: wrap; 
+}
+
+
+.history .text {
+    flex: 1; 
+    text-align: left;
+    max-width: 60%;
+}
+
+
+.history h2 {
+    color: #6E5389;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+
+.history p {
+    margin: 10px 0;
+    color: #333;
+    font-size: 1.2em;
+}
+
+.history .image {
+    flex-shrink: 0;
+    max-width: 35%; 
+}
+
+.history img {
+    width: 200px; 
+    height: auto; 
+    border-radius: 10px; 
+}
+
+/*Estilo para preguntas y respuestas*/
+
+.faqs {
+    background-color: #fff;
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.faqs h2 {
+    text-align: center;
+    color:#1E7532;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.faq-item {
+    background-color: #e8ffdc;
+    border: 2px solid #32cd32;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative; 
+}
+
+.faq-item h3 {
+    color: #000;
+    font-size: 18px;
+    margin: 0;
+    padding-right: 20px; 
+}
+
+.faq-item h3::after {
+    content: "+";
+    color:#027832;
+    font-weight: bold;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.faq-item p {
+    display: none; 
+    margin-top: 10px;
+    color: #000;
+}
+
+/*Estilo contactos y formulario*/
+.contact {
+    background-color: #ffccd5;
+    text-align: left;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact h2 {
+    color: #6E5389;
+    font-size: 24px;
+    text-align: left;
+    width: 100%;
+}
+
+.contact-details {
+    margin-bottom: 20px;
+    width: 40%;
+}
+
+.contact-details p {
+    margin: 10px 0;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.contact-details img {
+    margin-right: 10px;
+}
+
+.contact-form {
+    background-color: #6E5389;
+    padding: 20px;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form .intereses {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.contact-form .intereses span {
+    background-color: #d1a3c9;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form label {
+    display: block;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.contact-form button {
+    background-color: #E7EAEC;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-form button img {
+    margin-left: 10px;
+}
+
+
+/* pagina de eventos*/
+
+/*Estilo sobre el menu secundario de la pagina*/
+.event-categories {
+    background-color: #EFEFEF;
+    padding: 20px 0;
+}
+
+.event-categories .container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.category-button {
+    background-color: #C34181;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+/*Estilo para la seccion de eventos*/
+
+.events-section {
+    background-color: #FFE6F7;
+    padding: 20px 0;
+}
+
+.events-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.events-section h2 {
+    color: #9F4181;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+.events {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.event-card {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.event-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.event-card h3 {
+    margin: 10px 0;
+    color: #C34181;
+}
+
+.event-card p {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.event-card .btn {
+    background-color: #C34181;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.event-card .btn:hover {
+    background-color: #A12E61;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+}
+
+/*Estilo seccion eventos virtuales*/
+
+.virtual-events-section {
+    background-color: #FFFFCC;
+    padding: 20px 0;
+}
+
+.virtual-events-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.virtual-events-section h2 {
+    color: #000000;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+.virtual-events {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    text-align: left;
+}
+
+.virtual-event {
+    background-color: #800080;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    margin: 10px 0; 
+}
+
+.virtual-event p {
+    margin: 0; 
+    color: #fff;
+}
+
+.btn-virtual {
+    background-color: #FFFFCC;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/*Estilo calendario(tabla)*/
+
+.calendar-section {
+    background-color: #F8FFF3;
+    padding: 20px 0;
+}
+
+.calendar-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.calendar-section h2 {
+    color: #800080;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+.calendar {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.calendar table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.calendar th, .calendar td {
+    border: 1px solid #DDD;
+    padding: 10px;
+    text-align: center;
+    width: 14.28%;
+}
+
+.calendar th {
+    background-color: #800080;
+    color: white;
+    font-weight: bold;
+}
+
+.calendar td {
+    background-color: #F8FFF3;
+}
+
+.calendar .prev-month, .calendar .next-month {
+    color: #CCC;
+}
+
+/* pagina de tienda*/
+/* Estilo menu secundario*/
+
+.category-tabs {
+    background-color: #EFEFEF;
+    padding: 20px 0;
+}
+
+.category-tabs .container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.category-tab {
+    background-color: #C34181;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.category-tab:hover {
+    background-color: #A12E61;
+}
+
+/*Estilos sección de novedades de la semana*/
+
+.weekly-highlights {
+    background-color: #fce0f1;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center; 
+}
+
+.weekly-highlights h2 {
+    color: #9F4181;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.highlight-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 20px;
+}
+
+.highlight-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    flex: 1 1 calc(25% - 20px); 
+    box-sizing: border-box;
+    max-width: 200px; 
+}
+
+.highlight-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.highlight-item p {
+    color: #333;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/*Estlos de diferentes categorias de libros*/
+
+.category-section {
+    margin: 20px 0;
+}
+
+.category-section h2 {
+    color:#D52565;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.category-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    flex: 1 1 calc(25% - 20px);
+    box-sizing: border-box;
+    max-width: 200px; 
+}
+
+.item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.item p {
+    color: #333;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.buy-button {
+    background-color: #D52565;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.arrow-left, .arrow-right {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.arrow-left img, .arrow-right img {
+    height: 30px;
+}
+
+/*Estilo para el pie de pagina*/
+
+footer {
+    background-color: #d1b1e0;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+
+footer p {
+    margin: 0; 
+    font-weight: bold;
+    text-align: left;
+}
+
+footer .social-icons {
+    display: flex;
+    align-items: center;
+}
+
+footer .social-icons img {
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+footer .logo-footer {
+    text-align: right;
+}
+
+footer .logo-footer img {
+    width: 150px; 
+}
+
+/* Media Queries para ser responsive */
+
+@media (max-width: 1200px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 992px) {
+    header .logo img {
+        height: 100px;
+    }
+
+    .offers .books img {
+        max-width: 120px;
+    }
+
+    .main-content .section-news, .main-content .section-events {
+        width: 100%;
+    }
+
+    .history-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .history .text {
+        max-width: 100%;
+    }
+
+    .contact {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contact-details,
+    .contact-form {
+        width: 100%;
+    }
+
+    .event-card {
+        width: 100%;
+    }
+
+    .category-tabs.tabs .container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    header .icons {
+        margin-top: 10px;
+    }
+
+    .main-content {
+        flex-direction: column;
+    }
+
+    .contact-form .intereses span {
+        padding: 8px;
+    }
+
+    .event-card {
+        width: 100%;
+    }
+
+    .events-section .container {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .offers h2 {
+        font-size: 1.5em;
+    }
+
+    .offers .text {
+        text-align: center;
+    }
+
+    .offers .books {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .offers .books img {
+        max-width: 100px;
+    }
+
+    .main-content h2 {
+        font-size: 1.3em;
+    }
+
+    .main-content .section-news, .main-content .section-events {
+        width: 100%;
+    }
+
+    .history h2 {
+        font-size: 1.5em;
+    }
+
+    .history-content {
+        gap: 10px;
+    }
+
+    .faq-item h3 {
+        font-size: 16px;
+    }
+
+    .contact h2 {
+        font-size: 20px;
+    }
+
+    .event-card h3 {
+        font-size: 18px;
+    }
+
+    .event-card p {
+        font-size: 14px;
+    }
+
+    .category-tabs.tabs .container {
+        gap: 20px;
+    }
+
+    .events-section .container {
+        gap: 10px;
+    }
+}
